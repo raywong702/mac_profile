@@ -29,7 +29,7 @@ export PS1="$turquoise\u$green@$forest_green\h:$amber\w$purple\$(__git_ps1)$lime
 #export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-alias ls='ls -GFh --color'
+alias ls='ls -GFh'
 
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 
