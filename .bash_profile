@@ -26,7 +26,7 @@ export CLICOLOR=1
 #export LSCOLORS=ExFxBxDxCxegedabagacad
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
 
 alias ls='ls -GFh'
 
