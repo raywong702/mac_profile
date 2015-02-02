@@ -22,9 +22,9 @@ purple="\[\033[0;35m\]"
 reset="\[\033[0m\]" #green2
 
 export PS1="$turquoise\u$green@$forest_green\h:$amber\w$purple\$(__git_ps1)$lime_green\$ "
-export CLICOLOR=1
+#export CLICOLOR=1
 #export LSCOLORS=ExFxBxDxCxegedabagacad
-export LSCOLORS=GxFxCxDxBxegedabagaced
+#export LSCOLORS=GxFxCxDxBxegedabagaced
 
 #export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
