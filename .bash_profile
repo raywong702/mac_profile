@@ -26,9 +26,10 @@ export CLICOLOR=1
 #export LSCOLORS=ExFxBxDxCxegedabagacad
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
+#export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
-alias ls='ls -GFh'
+alias ls='ls -GFh --color'
 
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 
