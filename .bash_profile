@@ -11,8 +11,8 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # Enable Brew tab completion
 source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
-#export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
+#export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # colors
 turquoise="\[\033[36m\]"
@@ -25,12 +25,19 @@ purple="\[\033[0;35m\]"
 reset="\[\033[0m\]" #green2
 
 export PS1="$turquoise\u$green@$forest_green\h:$amber\w$purple\$(__git_ps1)$lime_green\$ "
-export CLICOLOR=1
+#export CLICOLOR=1
 #export LSCOLORS=ExFxBxDxCxegedabagacad
-export LSCOLORS=GxFxCxDxBxegedabagaced
+#export LSCOLORS=GxFxCxDxBxegedabagaced
 
 #alias ls='ls -GFh --color'
-alias ls='ls -GFh'
+#alias ls='ls -GFh'
+
+if [ "$TERM" != "dumb" ]; then
+    export LS_OPTIONS='--color=auto'
+    eval `dircolors ~/.dir_colors`
+fi
+
+alias ls='ls $LS_OPTIONS -GFh'
 
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 
