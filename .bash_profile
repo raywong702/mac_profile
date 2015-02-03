@@ -11,10 +11,12 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # Enable Brew tab completion
 source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
-export PATH=$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH
-#export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+# Only need for coreutils. Everything else is in /usr/local/bin
+# But use gfind, ggrep, etc. Starts with a 'g'
+BREW_PATHS=$(brew --prefix coreutils)/libexec/gnubin
+export PATH=$BREW_PATHS:/usr/local/bin:/usr/local/sbin:$PATH
 
-# colors
+# Colors
 turquoise="\[\033[36m\]"
 green="\[\033[m\]"
 forest_green="\[\033[32m\]"
