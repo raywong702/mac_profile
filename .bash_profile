@@ -16,6 +16,9 @@ source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 BREW_PATHS=$(brew --prefix coreutils)/libexec/gnubin
 export PATH=$BREW_PATHS:/usr/local/bin:/usr/local/sbin:$PATH
 
+# Python path for projects
+export PYTHONPATH=$PYTHONPATH:/Users/raymond/Projects/LearnPythonGroup/PyCards
+
 # Colors
 turquoise="\[\033[36m\]"
 green="\[\033[m\]"
