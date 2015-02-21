@@ -19,6 +19,9 @@ export PATH=$BREW_PATHS:/usr/local/bin:/usr/local/sbin:$PATH
 # Python path for projects
 export PYTHONPATH=$PYTHONPATH:/Users/raymond/Projects/LearnPythonGroup/PyCards
 
+# Python interpreter startup script
+export PYTHONSTARTUP=$HOME/python-startup.py
+
 # Colors
 turquoise="\[\033[36m\]"
 green="\[\033[m\]"
@@ -51,3 +54,5 @@ alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall F
 alias showDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* '"'"'select LSQuarantineTimeStamp, LSQuarantineDataURLString from LSQuarantineEvent'"'"' | php -r '"'"'date_default_timezone_set("America/Montreal"); foreach (explode("\n", file_get_contents("php://stdin")) as $l) { preg_match("/([0-9\\.]+)\\|(.*)\$/", $l, $re); echo date("Y-m-d H:i:s",strtotime("2000-01-01 19:00")+$re[1])."\t$re[2]\n"; }'"'"''
 
 alias deleteDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* '"'"'delete from LSQuarantineEvent'"'"''
+
+alias python3='python3 -q'
