@@ -295,3 +295,6 @@ def clear():
 if __name__ == "__main__":
     setup_readline()
 #    setup_prompt()
+
+    if int(sys.version[0]) >= 3:
+        from importlib import reload
