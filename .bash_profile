@@ -56,3 +56,5 @@ alias showDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.Quar
 alias deleteDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* '"'"'delete from LSQuarantineEvent'"'"''
 
 alias python3='python3 -q'
+
+alias nas='ssh -p 9001 raymond@thewongguy.ddns.net'
