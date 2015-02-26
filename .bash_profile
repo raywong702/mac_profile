@@ -57,4 +57,4 @@ alias deleteDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.Qu
 
 alias python3='python3 -q'
 
-alias nas='ssh -p 9001 raymond@thewongguy.ddns.net'
+alias nas='ssh -p 10003 raymond@thewongguy.ddns.net'
