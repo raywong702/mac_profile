@@ -17,7 +17,9 @@ BREW_PATHS=$(brew --prefix coreutils)/libexec/gnubin
 export PATH=$BREW_PATHS:/usr/local/bin:/usr/local/sbin:$PATH
 
 # Python path for projects
-export PYTHONPATH=$PYTHONPATH:/Users/raymond/Projects/LearnPythonGroup/PyCards
+PYTHONPATH=$PYTHONPATH:/Users/raymond/Projects/LearnPythonGroup/PyCards
+PYTHONPATH=$PYTHONPATH:/Users/raymond/Projects/LearnPythonGroup/jeeves
+export PYTHONPATH
 
 # Python interpreter startup script
 export PYTHONSTARTUP=$HOME/python-startup.py
@@ -58,3 +60,5 @@ alias deleteDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.Qu
 alias python3='python3 -q'
 
 alias nas='ssh -p 10003 raymond@thewongguy.ddns.net'
+
+alias nasroot='ssh -p 10003 root@thewongguy.ddns.net'
