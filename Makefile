@@ -1,4 +1,4 @@
-all:bash ghc git python vim zsh
+all:bash git python vim
 
 bash:
 	cp .bash_profile ~/.bash_profile
