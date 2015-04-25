@@ -1,6 +1,9 @@
 # Enable Git tab completion
 source ~/git-completion.bash
 
+# Virtualenv Wrapper
+source /usr/local/bin/virtualenvwrapper.sh
+
 # Change Git command prompt
 source ~/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=1
@@ -14,7 +17,9 @@ source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 # Only need for coreutils. Everything else is in /usr/local/bin
 # But use gfind, ggrep, etc. Starts with a 'g'
 BREW_PATHS=$(brew --prefix coreutils)/libexec/gnubin
-export PATH=$BREW_PATHS:/usr/local/bin:/usr/local/sbin:$PATH
+PATH=$BREW_PATHS:/usr/local/bin:/usr/local/sbin:$PATH
+PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
+export PATH
 
 # Python path for projects
 PYTHONPATH=$PYTHONPATH:/Users/raymond/Projects/LearnPythonGroup/PyCards
