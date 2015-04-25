@@ -2,6 +2,7 @@
 source ~/git-completion.bash
 
 # Virtualenv Wrapper
+export WORKON_HOME=~/Envs
 source /usr/local/bin/virtualenvwrapper.sh
 
 # Change Git command prompt
