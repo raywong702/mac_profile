@@ -70,4 +70,4 @@ alias nas='ssh -p 10003 raymond@thewongguy.ddns.net'
 alias nasroot='ssh -p 10003 root@thewongguy.ddns.net'
 
 #alias aws='ssh -i ~/Projects/aws/aws.pem ec2-user@ec2-52-27-201-219.us-west-2.compute.amazonaws.com'
-alias aws='ssh -i ~/Projects/aws/aws.pem ec2-user@54.149.208.216'
+alias aws='ssh -i ~/Projects/aws/aws.pem ec2-user@54.149.143.117'
