@@ -13,7 +13,7 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 # '\W' adds the name of the current directory
 
 # Enable Brew tab completion
-source `brew --repository`/Library/Contributions/brew_bash_completion.sh
+###source `brew --repository`/Library/Contributions/brew_bash_completion.sh
 
 # Only need for coreutils. Everything else is in /usr/local/bin
 # But use gfind, ggrep, etc. Starts with a 'g'
