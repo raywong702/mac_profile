@@ -53,6 +53,8 @@ if [ "$TERM" != "dumb" ]; then
     eval `dircolors ~/.dir_colors`
 fi
 
+alias vi='vim'
+
 alias ls='ls $LS_OPTIONS -GFh'
 
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'

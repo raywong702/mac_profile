@@ -111,4 +111,6 @@ if has("autocmd")
 	autocmd BufNewFile,BufRead *.json setfiletype json syntax=javascript
 	" Treat .md files as Markdown
 	autocmd BufNewFile,BufRead *.md setlocal filetype=markdown
+    " Enable all Python syntax highlighting features
+    autocmd BufRead,BufNewFile *.py let python_highlight_all=1
 endif
