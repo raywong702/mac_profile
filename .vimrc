@@ -139,6 +139,7 @@ if has("autocmd")
 endif
 
 " YouCompleteMe
+let g:ycm_python_binary_path = '/usr/local/bin/python3'
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g  :YcmCompleter GoToDefinitionElseDeclaration<CR>
 
