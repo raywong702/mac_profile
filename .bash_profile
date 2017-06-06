@@ -65,10 +65,16 @@ alias showDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.Quar
 
 alias deleteDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV* '"'"'delete from LSQuarantineEvent'"'"''
 
+alias ssh='ssh -q'
+
+alias scp='scp -o "loglevel=quiet"'
+
 alias python3='python3 -q'
 
 alias nas='ssh -p 10003 raymond@thewongguy.ddns.net'
 
 alias nasroot='ssh -p 10003 root@thewongguy.ddns.net'
 
-alias aws="ssh -i ~/Projects/aws/aws.pem ec2-user@thewongguy.noip.me"
+alias sandbox='ansible-playbook ~/Projects/Verizon/aws/sandbox.yml'
+
+alias terminate='ansible-playbook ~/Projects/Verizon/aws/terminate.yml'
