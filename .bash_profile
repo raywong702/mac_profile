@@ -73,6 +73,10 @@ alias scp='scp -o "loglevel=quiet"'
 
 alias python3='python3 -q'
 
+alias pipupgrade="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U"
+
+alias pip3upgrade="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip3 install -U"
+
 alias nas='ssh -p 10003 raymond@thewongguy.ddns.net'
 
 alias nasroot='ssh -p 10003 root@thewongguy.ddns.net'
