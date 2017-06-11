@@ -85,6 +85,4 @@ alias sandbox='cd ~/Projects/Verizon/aws/; ansible-playbook sandbox.yml'
 
 alias terminate='cd ~/Projects/Verizon/aws/; ansible-playbook terminate.yml'
 
-alias gooey_activate='~/Envs/paramiko/bin/activate; cd ~/Projects/python/paramiko'
-
-alias gooey_deactivate='~/Envs/paramiko/bin/deactivate'
+alias gooey_activate='source  ~/Envs/paramiko/bin/activate; cd ~/Projects/python/paramiko'
