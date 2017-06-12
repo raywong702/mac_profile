@@ -67,7 +67,7 @@ alias deleteDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.Qu
 
 alias ssh='ssh -q'
 
-alias awsssh='ssh -i ~/Projects/aws/aws.pem' 
+alias awsssh='ssh -i ~/Projects/aws/aws.pem'
 
 alias scp='scp -o "loglevel=quiet"'
 
