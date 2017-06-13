@@ -68,8 +68,6 @@ alias deleteDownloads='sqlite3 ~/Library/Preferences/com.apple.LaunchServices.Qu
 
 alias ssh='ssh -q'
 
-alias awsssh='ssh -i ~/Projects/aws/aws.pem'
-
 alias scp='scp -o "loglevel=quiet"'
 
 alias python3='python3 -q'
@@ -87,3 +85,6 @@ alias sandbox='cd ~/Projects/Verizon/aws/; ansible-playbook sandbox.yml'
 alias terminate='cd ~/Projects/Verizon/aws/; ansible-playbook terminate.yml'
 
 alias gooey_activate='source  ~/Envs/paramiko/bin/activate; cd ~/Projects/python/paramiko'
+
+function awsssh() { ssh -i ~/Projects/aws/aws.pem ec2-user@${@}; }
+export -f awsssh
