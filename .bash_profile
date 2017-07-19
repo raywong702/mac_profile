@@ -72,7 +72,7 @@ alias scp='scp -o "loglevel=quiet"'
 
 alias python3='python3 -q'
 
-alias pipupgrade="pip freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip install -U"
+alias pipupgrade="pip2 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip2 install -U"
 
 alias pip3upgrade="pip3 freeze --local | grep -v '^\-e' | cut -d = -f 1  | xargs pip3 install -U"
 
