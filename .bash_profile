@@ -86,7 +86,9 @@ alias terminate='cd ~/Projects/Verizon/aws/; ansible-playbook terminate.yml'
 
 alias gooey_activate='source  ~/Envs/paramiko/bin/activate; cd ~/Projects/python/paramiko'
 
-alias ignore='git update-index --no-assume-unchanged'
+alias ignore='git update-index --assume-unchanged'
+
+alias unignore='git update-index --no-assume-unchanged'
 
 function awsssh() { ssh -i ~/Projects/aws/aws.pem ec2-user@${@}; }
 export -f awsssh
