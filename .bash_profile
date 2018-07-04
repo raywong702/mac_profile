@@ -23,6 +23,12 @@ PATH=$BREW_PATHS:/usr/local/bin:/usr/local/sbin:$PATH
 PATH=/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH
 export PATH
 
+# Java and Maven
+M2_HOME=/usr/local/Cellar/maven/3.5.3/libexec
+JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home
+PATH=$JAVA_HOME/bin:M2_HOME/bin:$PATH
+export PATH
+
 # Python path for projects
 PYTHONPATH=$PYTHONPATH:/Users/raymond/Projects/LearnPythonGroup/PyCards
 PYTHONPATH=$PYTHONPATH:/Users/raymond/Projects/LearnPythonGroup/jeeves
