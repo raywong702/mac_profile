@@ -1,7 +1,3 @@
-if has('python3')
-  silent! python3 1
-endif
-
 " Vundle
 set nocompatible              " required
 filetype off                  " required
